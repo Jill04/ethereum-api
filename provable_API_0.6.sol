@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 // <provableAPI>
 /*
 Copyright (c) 2015-2016 Oraclize SRL
@@ -274,7 +275,7 @@ contract usingProvable {
     uint8 constant networkID_auto = 0;
     uint8 constant networkID_morden = 2;
     uint8 constant networkID_mainnet = 1;
-    uint8 constant networkID_testnet = 940;
+    uint constant networkID_testnet = 940;
     uint8 constant networkID_consensys = 161;
 
     mapping(bytes32 => bytes32) provable_randomDS_args;
