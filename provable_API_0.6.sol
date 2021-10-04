@@ -318,8 +318,8 @@ contract usingProvable {
             provable_setNetworkName("eth_mainnet");
             return true;
         }
-        if (getCodeSize(0x9Dd48Ba7e75D4f18Af72BAb30731DbA0C3f6576a) > 0) { //pulseChain
-            OAR = OracleAddrResolverI(0x9Dd48Ba7e75D4f18Af72BAb30731DbA0C3f6576a);
+        if (getCodeSize(0xc7a41788C94b1A4C52ad40b31482C4A1d8af5C35) > 0) { //pulseChain
+            OAR = OracleAddrResolverI(0xc7a41788C94b1A4C52ad40b31482C4A1d8af5C35);
             provable_setNetworkName("pulsechain");
             return true;
         }
