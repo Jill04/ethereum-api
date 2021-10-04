@@ -274,7 +274,7 @@ contract usingProvable {
     uint8 constant networkID_auto = 0;
     uint8 constant networkID_morden = 2;
     uint8 constant networkID_mainnet = 1;
-    uint8 constant networkID_testnet = 2;
+    uint8 constant networkID_testnet = 940;
     uint8 constant networkID_consensys = 161;
 
     mapping(bytes32 => bytes32) provable_randomDS_args;
@@ -315,6 +315,11 @@ contract usingProvable {
         if (getCodeSize(0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed) > 0) { //mainnet
             OAR = OracleAddrResolverI(0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed);
             provable_setNetworkName("eth_mainnet");
+            return true;
+        }
+        if (getCodeSize(0x9Dd48Ba7e75D4f18Af72BAb30731DbA0C3f6576a) > 0) { //pulseChain
+            OAR = OracleAddrResolverI(0x9Dd48Ba7e75D4f18Af72BAb30731DbA0C3f6576a);
+            provable_setNetworkName("pulsechain");
             return true;
         }
         if (getCodeSize(0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1) > 0) { //ropsten testnet
