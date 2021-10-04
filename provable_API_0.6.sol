@@ -273,7 +273,7 @@ contract usingProvable {
 
     string provable_network_name;
     uint8 constant networkID_auto = 0;
-    uint8 constant networkID_morden = 2;
+    uint8 constant networkID_morden = 940;
     uint8 constant networkID_mainnet = 1;
     uint constant networkID_testnet = 940;
     uint8 constant networkID_consensys = 161;
